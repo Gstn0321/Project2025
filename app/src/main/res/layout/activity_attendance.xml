@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 작업자 ID 입력 -->
+    <EditText
+        android:id="@+id/workerIdEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="작업자 ID"
+        android:inputType="number" />
+
+    <!-- 출근 시간 입력 -->
+    <EditText
+        android:id="@+id/checkInEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="출근 시간"
+        android:inputType="time" />
+
+    <!-- 퇴근 시간 입력 -->
+    <EditText
+        android:id="@+id/checkOutEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="퇴근 시간"
+        android:inputType="time" />
+
+    <!-- 저장 버튼 -->
+    <Button
+        android:id="@+id/saveAttendanceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="저장"
+        android:onClick="onSaveAttendanceClick"
+        android:layout_gravity="center" />
+</LinearLayout>
